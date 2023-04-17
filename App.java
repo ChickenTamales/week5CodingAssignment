@@ -4,15 +4,16 @@ public class App {
 
 public static void main(String[] args) {
 
-	    static AsteriskLogger.log("I don't know");
-	    static AsteriskLogger.error("Cannot compute!");
-
-	    static SpacedLogger.log("Ugggghhhh");
-	    static SpacedLogger.error("Why?!");
-
+	Logger asteriskLogger = new AsteriskLogger();
+	asteriskLogger.log("I don't know");
+	asteriskLogger.error("Uggghhhh");
+	
+	Logger spacedLogger = new SpacedLogger();
+	spacedLogger.log("Connot compute!");
+	spacedLogger.error("WHY?!");
 
 }
 	
 }	
 
-}
+
